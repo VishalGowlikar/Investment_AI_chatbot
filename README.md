@@ -37,8 +37,9 @@ A web-based AI chatbot designed to provide personalized financial investment adv
    git clone https://github.com/yourusername/investment-advisory-chatbot.git
    cd investment-advisory-chatbot
 npm install
-OPENAI_API_KEY=your_api_key_here
-node server.js
+
+##OPENAI_API_KEY=your_api_key_here
+##node server.js
 ├── index.html             # Frontend UI
 ├── script.js              # Frontend logic
 ├── server.js              # (Assumed backend logic)
