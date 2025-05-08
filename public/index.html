@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Finance Chatbot</title>
+    <style>
+      body {
+        font-family: Arial;
+        padding: 20px;
+        background: #f2f2f2;
+      }
+      #chatbox {
+        border: 1px solid #ccc;
+        padding: 10px;
+        height: 300px;
+        overflow-y: auto;
+        background: #fff;
+        margin-bottom: 10px;
+        resize: vertical;
+        min-height: 150px;
+        max-height: 600px;
+      }
+      .msg {
+        margin: 5px 0;
+      }
+      .user {
+        font-weight: bold;
+      }
+      .bot {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>💸Investment Advisory Chatbot💸</h2>
+
+    <div>
+      <table id="portfolioTable">
+        <tr>
+          <th>Symbol</th>
+          <th>Quantity</th>
+          <th>Buy Price</th>
+        </tr>
+      </table>
+      <button onclick="addRow()">Add Asset</button>
+    </div>
+
+    <br />
+    <label>Risk: <input id="risk" value="Moderate" /></label><br />
+    <label
+      >Interests (comma-separated):
+      <input id="interests" value="Crypto, Tech" /></label
+    ><br /><br />
+
+    <div id="chatbox"></div>
+
+    <input id="message" placeholder="Ask me anything..." size="60" />
+    <button onclick="sendMessage()">Send</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
